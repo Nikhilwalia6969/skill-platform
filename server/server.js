@@ -15,8 +15,8 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
 
-app.get("./", (req, res) => {
-  res.join({ message: "API running" });
+app.get("/", (req, res) => {
+  res.json({ message: "API running" });
 });
 
 app.use("/api/auth", require("./routes/authRoutes"));
