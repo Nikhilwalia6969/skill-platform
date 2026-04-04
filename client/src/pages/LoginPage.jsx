@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { AuthContext } from "../context/auth-context";
 
 export default function LoginPage() {
   const [form, setForm] = useState({ email: "", password: "" });
